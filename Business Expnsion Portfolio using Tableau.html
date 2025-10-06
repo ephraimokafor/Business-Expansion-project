@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Ephraim Okafor Portfolio</title>
+		<meta charset="/">
+		</head><body class="is-preload">&lt; /&gt;
+		<link rel="href=">
+		<noscript><link rel= /></noscript>
+	<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+	
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1>Ephraim Okafor <br>
+						Data Sciencs Portfolio</h1>
+						<p>Skilled Data Scientist with expertise in Python, SQL, Tableau, Power BI, Excel, Natural Language Processing, Computer Vision,  and advanced analytics — adept at transforming complex data into actionable business insights through visualization, machine learning, and effective storytelling. &lt;
+&gt;
+						.</p>
+						<ul class="actions">
+							<li><a href="http://127.0.0.1:5500/linkedin.com/in/ephraim-okafor" class="button icon solid solo fa-arrow-down scrolly"></a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="http://127.0.0.1:5500/index.html" class="logo">
+
+
+BUSINESS PERFORMANCE ANALYSI USING TABLEAU
+</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="http://127.0.0.1:5500/index.html">INTRODUCTION</a></li>
+							<li><a href="http://127.0.0.1:5500/generic.html">
+
+
+</a></li>
+							<li><a href="http://127.0.0.1:5500/elements.html"></a></li>
+						</ul>
+						<ul class="icons">
+							<li><a href="http://127.0.0.1:5500/linkedin.com/in/ephraim-okafor" class="linkedin"><span class="label">linkedin</span></a></li>
+							<li><a href="https://github.com/ephraimokafor" class="github"><span class="label">github</span></a></li>
+	
+							
+					</ul></nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									
+									<h2><a href="http://127.0.0.1:5500/index.html#">INTRODUCTION<br>
+									</a>
+The CEO and CMO want a concise, trustworthy view of how the online retail store performed historically and which areas offer the greatest growth opportunities. The main deliverables requested were four visuals answering:
+Monthly revenue time series for 2011 (seasonality/forecasting).
+
+
+Top 10 revenue-generating countries (excluding the UK) showing both revenue and quantity sold.
+
+
+Top 10 customers by revenue, sorted descending (customer ranking).
+
+
+Demand by country/region (excluding the UK) on a single view for expansion decisions.
+
+
+The senior team needs correct visuals because management decisions (expansion, marketing spend, stock planning, VIP customer programs) will be made from these charts.
+</h2>								<p>
+/&gt;
+									 /&gt;
+									</p>
+								</header>
+								<a href="http://127.0.0.1:5500/index.html#" class=""><img src="http://127.0.0.1:5500/index.html" alt="">Problem statement: 
+Senior management faces three practical problems:
+Forecasting &amp; capacity planning: Without clear month-by-month seasonality, the CEO can’t forecast inventory needs or marketing timing.
+
+
+Geographic expansion decisions: The CEO needs a global view of demand (excluding the UK) to prioritise countries/regions for expansion.
+
+
+Customer retention &amp; revenue concentration: The CMO needs to know which customers generate most revenue (top 10) to protect and grow that segment while ensuring concentration risk is understood.
+
+
+Underlying these problems is a data quality risk: transactional records include negative quantities (returns) and erroneous unit prices, which must be removed/handled before analysis.
+</a>
+								<ul class="actions special">
+									<li><a href="http://127.0.0.1:5500/index.html#" class="button large">Objectives :
+Primary aims:
+Produce accurate, easy-to-interpret visuals answering the four questions above.
+
+
+Clean the transactional data to ensure all analysis is trustworthy (filter returns/errors).
+
+
+Deliver actionable, prioritised recommendations for growth, marketing, product stocking, and customer retention.
+
+
+Success criteria:
+Each visual clearly answers the business question with no misleading axes, correct sorting, and appropriate granularity.
+
+
+Forecast inputs incorporate observed seasonality (monthly) for 2011 and support a short-term forecast.
+
+
+The geographic map shows all countries (excluding the UK) in a single, scroll-free view, highlighting target expansion opportunities.
+
+
+
+</a> Data &amp; Data cleaning (methodology – stage 1)
+Files seen: visuals in the folder (images), but not the raw dataset. Below are the clean-up steps to run on the transactional dataset prior to analysis:
+Load the transactional data (fields expected: InvoiceNo, StockCode, Description, Quantity, InvoiceDate, UnitPrice, CustomerID, Country).
+
+
+Type conversion &amp; timestamping: parse InvoiceDate to datetime; create Year, Month, MonthYear fields.
+
+
+Remove cancelled transactions/returns: filter out rows where Quantity &lt; 1. (If returns are recorded as negative quantities but need to be included as return analytics, then isolate them to a separate returns analysis — they must not be mixed into positive sales aggregates.)
+
+
+Remove invalid unit prices: filter out rows where UnitPrice &lt;= 0. (Alternatively, if there are a few zeroes that look like legitimate promotions, validate manually.)
+
+
+Handle missing CustomerIDs: if CustomerID is missing, decide — either exclude from customer ranking or attempt imputation only if safe.
+
+
+Deduplicate/remove test data: remove test invoices, cancelled rows or clearly erroneous stock codes.
+
+
+Create derived metrics: Revenue = Quantity * UnitPrice; aggregate at month/country/customer levels as needed.
+
+
+Validation checks: totals before and after cleaning; random row inspection; check for anomalies (very large unit price or quantity outliers).
+
+
+(These checks implement the exact conditional formulas you were asked to apply: Quantity &gt;= 1 and UnitPrice &gt; 0.)
+
+
+Analysis methodology (stage 2)
+High-level steps to produce the visuals and insight:
+Exploratory Data Analysis (EDA):
+
+
+Produce summary stats (total revenue, total qty, orders, customers, average order value).
+
+
+Visualise distributions (unit price, revenue per invoice, qty per invoice).
+
+
+Time series aggregation (Question 1):
+
+
+Filter data for Year = 2011.
+
+
+Aggregate Revenue by Month (Jan–Dec).
+
+
+Visualise monthly revenue as a line chart with markers; overlay 12-month moving average and annotate peaks/troughs and notable events (promos/holidays).
+
+
+Fit a forecasting model (see Modelling below) for a short-term forecast.
+
+
+Top countries (Question 2):
+
+
+Exclude UK (Country != 'United Kingdom').
+
+
+Aggregate by country: Revenue and Quantity.
+
+
+Sort by Revenue descending and select the top 10.
+
+
+Visual: dual-axis or combined grouped bar: revenue as bars (descending left to right), quantity as line or second bars. Add data labels and currency formatting.
+
+
+Top customers (Question 3):
+
+
+Aggregate Revenue by CustomerID.
+
+
+Sort descending and take the top 10 customers.
+
+
+Visual: horizontal bar chart sorted descending (largest at top). Use consistent colour highlighting top 3. Include CustomerID + revenue, and optionally number of orders or average order value, to profile them.
+
+
+Demand by country/region (Question 4):
+
+
+Exclude the UK. Aggregate Quantity or Revenue by country.
+
+
+Visual: world choropleth or proportional symbol map (circle size ~ demand). Because the CEO asked for a single view, no hovering or scrolling, ensure the map fits one screen with clear labels — or provide a sorted table plus choropleth side-by-side. Use a diverging/stepped colour palette, but since we only deliver images, ensure the legend is clear.
+
+
+KPIs &amp; Dashboard:
+
+
+Create a one-page dashboard with: Total Revenue (YTD), Revenue growth vs prior year, Average Order Value, Total Customers, Repeat Rate, Top Country, Top Customer, and Returns %.
+
+
+Validation &amp; story checks:
+
+
+Confirm monotonic sorting, axis scales, dual-axis pitfalls avoided (prefer shared scale or clear labelling), and consistent currency units.
+
+
+</li>Modelling (what I recommend and why)
+You asked for forecasting and identifying growth opportunities — below are the modelling choices and the intended outputs.
+A. Time series forecasting (for the monthly 2011 → next year forecast)
+Models to try: Facebook/Meta Prophet (quick, handles seasonality &amp; holidays), SARIMA (for interpretability), and an ensemble if desired.
+
+
+Input: Monthly revenue aggregated for 2011 (plus earlier years if available).
+
+
+Output: 12-month forecast with 80% &amp; 95% confidence intervals, and decomposition into trend/seasonality/residuals.
+
+
+Evaluation: backtest using rolling origin (if earlier years present) and metrics MAE, RMSE.
+
+
+B. Customer segmentation &amp; CLV modelling
+Technique: RFM analysis (Recency, Frequency, Monetary) to segment customers; K-means or hierarchical clustering to formalise segments.
+
+
+Advanced: Predictive CLV model (e.g., BG/NBD + Gamma-Gamma or machine learning regression model) to rank customers by expected future value.
+
+
+Use: identify VIPs, retention priority, and target promotions.
+
+
+C. Geospatial demand &amp; expansion scoring
+Technique: Rank countries by a multi-factor score: recent revenue growth rate, revenue per capita (or per online user proxy), quantity sold, average order value, returns rate, and logistics cost proxy.
+
+
+Output: priority list of countries with expected ROI for expansion.
+
+
+D. Product performance (if product data available)
+Technique: ABC analysis (Pareto) to identify top stock-keeping units by revenue; support product bundling and stocking decisions.
+
+
+E. NLP / CV (optional advanced)
+NLP: Analyse customer reviews/feedback for sentiment and product pain points.
+
+
+CV: If product images &amp; returns have visual reasons (damaged goods), computer vision can help categorise.
+
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										
+										<h2><a href="http://127.0.0.1:5500/index.html#">Visualisation choices — recommended chart types (mapping to your questions)<br>
+										I aligned the visuals to what leadership asked for and to best practices:
+Q1 (2011 monthly revenue): Line chart with monthly points (Jan–Dec), 12-month moving average overlay and seasonal decomposition panel. Annotate major peaks (holiday season, promotion weeks) for context. (You already have 2011 MONTHLY SALES TREND.png in the folder — that’s the right visual form.)
+
+
+Q2 (Top 10 countries by revenue + quantity, exclude UK): Grouped bar chart or bar + line (combo):
+
+
+Bars = Revenue (descending), Line = Quantity or second axis for quantity.
+
+
+Add data labels and exclude the UK filter.
+
+
+Alternative: small multiples showing revenue and quantity side-by-side for each country.
+
+
+Q3 (Top 10 customers by revenue): Horizontal sorted bar chart (largest to smallest) with customer IDs on y-axis, revenue on x-axis. Highlight the top 3 customers with a different colour and show the secondary metric (orders or average order value) as a label.
+
+
+Q4 (Demand by country excluding UK): Choropleth world map with countries shaded by demand or a bubble map (circle size = demand). Since the CEO requested one single view with no hovering/scrolling, also include a small ranked table (top 15) next to the map so numbers are visible immediately.
+
+
+Dashboard / KPIs: One-page with KPI tiles, a sparkline for trend, the monthly line chart, top countries bar, and top customer bar — made in Power BI or Tableau. Use a consistent colour palette and clear currency formatting.
+</a></h2>
+									</header>
+									<a href="http://127.0.0.1:5500/index.html#" class=""><img src="./Climaxcee Business Expnsion Portfolio using Tableau_files/jpg" alt=""></a>
+									<p>Data analytics — what to inspect in each visual (how management should read them)
+
+										Q1 monthly trend:
+Look for recurring peaks (holiday season, end of quarter) and troughs.
+
+
+Compute month-over-month and year-over-year % changes.
+
+
+If one or two months concentrate a high share of revenue, plan promotions and inventory accordingly.
+
+
+Q2 top countries:
+Compare revenue share vs population/marketing spend to detect efficiency.
+
+
+High revenue + low quantity → high AOV markets (premium buyers).
+
+
+High quantity + low revenue → high volume low price markets (operate differently for logistics &amp; pricing).
+
+
+Q3 top customers:
+Identify the share of revenue contributed by the top 10 (Pareto check). If a small group contributes &gt;40–50%, that’s concentration risk.
+
+
+For top customers, compute churn risk (recency), repeat purchase rate, and average order value.
+
+
+Q4 demand by country/region:
+Rank countries by absolute demand and growth rate.
+
+
+Also, evaluate returns % by country (high returns could indicate product mismatch or delivery issues).
+
+</p>
+									<ul class="actions special">
+										<li><a href="http://127.0.0.1:5500/index.html#" class="button">
+
+
+
+
+
+
+</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2>Key findings (based on images in your folder + recommended checks)
+I reviewed the folder images (graph filenames listed above). The images indicate that you have already produced visuals aligned with the four questions. Based on those, the following high-level conclusions are what you should verify with the raw numbers:
+Seasonality exists in 2011 monthly sales (the CEO’s time-series visual is in the package) — use that seasonality for forecasting and inventory planning.
+
+
+A set of countries (top 10 excluding the UK) drives most revenue — prioritise these for targeted campaigns.
+
+
+Revenue is concentrated among a small number of customers (top 10) — implement VIP retention and tailored offers.
+
+
+Regions of high demand (map visual) are candidates for expansion, logistics partnerships and localised marketing.<a href="http://127.0.0.1:5500/index.html#">
+
+
+<br>
+</a></h2>
+									</header>
+									<a href="https://drive.google.com/file/d/1kNcHMkv6lO_wtaWw4og1X9ZHVHIqtfqS/view?usp=drive_link" class="image fit"><img src="./Climaxcee Business Expnsion Portfolio using Tableau_files/TATA DASHBOARD SCREENSHOT.png" alt=""></a>
+									<p> Recommendations 
+ 
+Seasonal trends in 2011 show clear peaks toward year-end, which can guide next year’s forecasting and marketing calendar.
+
+
+Top-performing countries outside the UK reveal where we should focus our international campaigns and tailor pricing strategies.
+
+
+High-value customers represent a critical revenue segment — implementing retention and loyalty initiatives will help protect this base.
+
+
+Demand hotspots identified on the global map highlight priority regions for potential expansion.
+
+
+Going forward, I recommend automating these dashboards in Power BI or Tableau so management can monitor them in real time.
+ We should also integrate forecasting models to predict future revenue and inventory needs based on seasonal trends.
+Thank you — I’ll now open the floor to your questions and feedback.
+</p>
+									<ul class="actions special">
+										<li><a href="http://127.0.0.1:5500/index.html#" class="button"></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="http://127.0.0.1:5500/index.html#"><br>
+										</a></h2>
+									</header>
+									<a href="http://127.0.0.1:5500/index.html#" class="image fit"><img src="./Climaxcee Business Expnsion Portfolio using Tableau_files/THE HIGHEST PERFORMING REGIONS.png" alt=""></a>
+									<p>.</p>
+									<ul class="actions special">
+										<li><a href="http://127.0.0.1:5500/index.html#" class="button"></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+									
+										<h2><a href="http://127.0.0.1:5500/index.html#"><br>
+										</a></h2>
+									</header>
+									<a href="http://127.0.0.1:5500/index.html#" class="image fit"><img src="./Climaxcee Business Expnsion Portfolio using Tableau_files/TOP 10 CUSTOMERS BY REVENUE.png" alt=""></a>
+									<p></p>
+									<ul class="actions special">
+										<li><a href="http://127.0.0.1:5500/index.html#" class="button"></a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										
+										<h2><a href="http://127.0.0.1:5500/index.html#"><br>
+										</a></h2>
+									</header>
+									<a href="http://127.0.0.1:5500/index.html" class=""><img src="http://127.0.0.1:5500/index.html" alt=""></a>
+									<p></p>
+									<ul class="actions special">
+										<li><a href="http://127.0.0.1:5500/index.html#" class="button">Full Story</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+									
+										<h2><a href="http://127.0.0.1:5500/index.html#">Business Expnssion Trend<br>
+										</a></h2>
+									</header>
+									<a href="http://127.0.0.1:5500/index.html#" class="image fit"><img src="./Climaxcee Business Expnsion Portfolio using Tableau_files/CEOs Images.jpg" alt=""></a>
+									<p></p>
+									<ul class="actions special">
+										<li><a href="https://drive.google.com/file/d/1kNcHMkv6lO_wtaWw4og1X9ZHVHIqtfqS/view?usp=drive_link" class="button"></a>Check it out</li>
+									</ul>
+								</article>
+							</section>
+
+						<!-- Footer -->
+							
+								</div>
+							
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<section>
+							<form method="post" action="http://127.0.0.1:5500/index.html#">
+								<div class="fields">
+									<div class="field">
+										<label for="name">Ephraim Okafor</label>
+										
+								
+						
+								<p><a href="http://127.0.0.1:5500/index.html#">1234567890</a></p>
+							</div></div></form></section>
+							<section>
+								<h3>ephraimkofor@gmail.com</h3>
+								<p><a href="https://drive.google.com/file/d/1kNcHMkv6lO_wtaWw4og1X9ZHVHIqtfqS/view?usp=drive_link">Tableau portfolio</a></p>
+							</section>
+							<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+									<li><a href="http://127.0.0.1:5500/index.html#" class="https://www.linkedin.com/in/ephraim-okafor/ "><span class="label">linkedin</span></a></li>
+									<li><a href="http://127.0.0.1:5500/index.html#" class="https://github.com/ephraimokafor"><span class="label">GitHub</span></a></li>
+								</ul>
+							</section>
+						
+					</footer>
+
+				<!-- Copyright -->
+					<div id="copyright">
+						<ul><li>© </li><li> <a href="https://html5up.net/"></a></li></ul>
+					</div>
+
+			</body></html>
